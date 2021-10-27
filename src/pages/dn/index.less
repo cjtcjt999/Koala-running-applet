@@ -1,0 +1,217 @@
+.DnContainer{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  .at-tab-bar {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .at-tab-bar__item {
+    flex: unset;
+    width: 200rpx;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 10rpx;
+    padding: 8rpx 12rpx;
+  }
+  .at-tab-bar__item--active {
+    color: unset;
+    background: rgba(4, 144, 243, 0.2);
+  }
+}
+.DnInfo{
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.5%;
+  bottom: 5vh;
+  border-radius: 16rpx;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px 0px;
+  background:#fff;
+
+  .takeInfo{
+    position: relative;
+    margin-left: 60rpx;
+    padding: 14rpx 40rpx 14rpx 0;
+    border-bottom: 2rpx solid #dbdbdb;
+  }
+  .takeAddress{
+    font-weight: bold;
+    font-size: 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .takeContacts{
+    display: block;
+    margin-top: 10rpx;
+    color: #ff5151;
+    font-size: 24rpx;
+  }
+  .takeContacts_b{
+    display: block;
+    margin-top: 10rpx;
+    color: #000000;
+    font-size: 24rpx;
+  }
+  .takeInfoIcon{
+    position: absolute;
+    display: inline-block;
+    top: 30rpx;
+    right: 0;
+    width: 40rpx;
+    height: 40rpx;
+  }
+  .takeCircle{
+    position: absolute;
+    left: -68rpx;
+    top: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 100%;
+    background: #333;
+    text-align: center;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    color: #fff;
+  }
+  .receiveInfo{
+    position: relative;
+    margin-left: 60rpx;
+    padding: 28rpx 40rpx 28rpx 0;
+  }
+  .receiveAddress{
+    font-weight: bold;
+    font-size: 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .receiveContacts{
+    display: block;
+    margin-top: 10rpx;
+    color: #ff5151;
+    font-size: 24rpx;
+  }
+  .receiveContacts_b{
+    display: block;
+    margin-top: 10rpx;
+    color: #000000;
+    font-size: 24rpx;
+  }
+  .receiveInfoIcon{
+    position: absolute;
+    display: inline-block;
+    top: 50rpx;
+    right: 0;
+    width: 40rpx;
+    height: 40rpx; 
+  }
+  .receiveCircle{
+    position: absolute;
+    left: -68rpx;
+    top: 36rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 100%;
+    background: #ff5151;
+    text-align: center;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    color: #fff;
+  }
+  .takeTimeLine{
+    width: 100%;
+    border-top: 2rpx solid #dbdbdb;
+  }
+  .appointmentWord{
+      display: inline-block;
+      position: absolute;
+      top: 28rpx;
+      left: 140rpx;
+      width: 100rpx;
+      height: 36rpx;
+      text-align: center;
+      line-height: 36rpx;
+      background: rgba(57, 181, 241, 0.5);
+      border-radius: 20rpx;
+      font-size: 22rpx;
+  }
+  .at-list__item {
+      padding: 20rpx 12rpx 20rpx 0;
+  }
+  .at-list__item .item-content__info-title {
+      font-size: 30rpx;
+      color: #333;
+  }
+  .at-list__item .item-extra__info {
+      font-size: 28rpx;
+      color:#000000;
+  }
+  .at-list::after {
+    display: none;
+  }
+  .at-list__item::after {
+    display: none;
+  }
+  .pickUp{
+      position: absolute;
+      right: 30rpx;
+      top: 8rpx;
+      font-size: 26rpx;
+  }
+  .goArrow{
+      position: absolute;
+      display: inline-block;
+      top: 28rpx;
+      right: -6rpx;
+      width: 40rpx;
+      height: 40rpx;
+  }
+}
+.orderInfo {
+  .at-input {
+    margin-left: unset;
+  }
+  .at-input__title {
+    font-size: 30rpx;
+  }
+  .at-input input {
+    font-size: 30rpx;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .at-input--disabled {
+    opacity: 1;
+  }
+  .at-input__children::after {
+    display: none;
+  }
+  .at-form::after {
+    border-top: unset;
+  }
+}
+.comTitle {
+  font-size: 30rpx;
+  margin: 16rpx 0 4rpx 0;
+}
+.bottomLine {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55Px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 -2px 8px 0;
+  z-index: 10;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  .at-button {
+    align-items: center;
+    height: 100%;
+  }
+}

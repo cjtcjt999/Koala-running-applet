@@ -1,0 +1,146 @@
+.qdPage {
+  background: #f3f3f3;
+  height: calc(100vh - 70rpx);
+  overflow: scroll;
+  .at-tabs__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .at-tabs-pane {
+    margin-top: 70rpx;
+  }
+  .at-modal {
+    left: unset;
+  }
+  .at-modal__container {
+    transform: translate(-50%, -78%);
+  }
+  .tabOne {
+    overflow: hidden;
+    padding: 8rpx 0 160rpx 0;
+    .at-card--full {
+      border: none;
+    }
+    .at-card__header {
+      border-bottom: 1PX #dadada dashed;
+    }
+    .at-card__header-title {
+      font-size: 28rpx;
+      font-weight: bold;
+      width: 476rpx;
+    }
+    .at-card__header-extra {
+      color: #999;
+    }
+    .at-card__header-thumb-info {
+      width: 108rpx;
+      height: 48rpx;
+    }
+    .at-card__header-thumb {
+      height: 42rpx;
+      -webkit-flex: 0 0 38rpx;
+      -ms-flex: 0 0 19px;
+      flex: 0 0 38rpx;
+    }
+    .cardImg{
+      width: 108rpx;
+      height: 48rpx;
+      margin: 4rpx 10rpx 0 0;
+    }
+    .takeInfo{
+      position: relative;
+      margin-left: 32rpx;
+      padding: 14rpx 40rpx 14rpx 0;
+    }
+    .takeAddress{
+      font-size: 26rpx;
+      color: #000;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    .takeContacts{
+      display: block;
+      margin-top: 10rpx;
+      color: #888;
+      font-size: 24rpx;
+    }
+    .takeCircle{
+      position: absolute;
+      left: -38rpx;
+      top: 26rpx;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 100%;
+      background: #333;
+    }
+    .receiveInfo{
+      position: relative;
+      margin-left: 32rpx;
+      padding: 14rpx 40rpx 14rpx 0;
+    }
+    .receiveAddress{
+      color: #000;
+      font-size: 26rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    .receiveContacts{
+      display: block;
+      margin-top: 10rpx;
+      color: #888;
+      font-size: 24rpx;
+    }
+    .receiveCircle{
+      position: absolute;
+      left: -38rpx;
+      top: 26rpx;
+      width: 16rpx;
+      height: 16rpx;
+      border-radius: 100%;
+      background: #ff5151;
+    }
+    .estimatedCost {
+      position: absolute;
+      right: 18rpx;
+      bottom: 170rpx;
+      font-size: 26rpx;
+    }
+    .totalFee {
+      position: absolute;
+      right: 18rpx;
+      bottom: 132rpx;
+      font-size: 26rpx;
+    }
+  }
+  .noOrder {
+    width: 260rpx;
+    margin: 20vh auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #656464;
+    font-size: 30rpx;
+    text-align: center;
+    image {
+      width: 120rpx;
+      height: 120rpx;
+      margin-bottom: 10rpx;
+    }
+  }
+  .noMore {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 40rpx;
+    font-size: 28rpx;
+    color: #888;
+  }
+}
