@@ -110,7 +110,7 @@ class Register extends Component {
       return;
     }
     Taro.request({
-      url: 'http://localhost:3000/register/',
+      url: 'https://chayuanshiyi.cn:4000/register/',
       method: 'POST',
       data: params
     }).then(res => {

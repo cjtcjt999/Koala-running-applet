@@ -27,7 +27,7 @@ class Feedback extends Component {
       return
     }
     Taro.request({
-        url: 'http://localhost:3000/userInfo/subFeedback/?',
+        url: 'https://chayuanshiyi.cn:4000/userInfo/subFeedback/?',
         method: 'GET',
         data: params
       }).then(res => {

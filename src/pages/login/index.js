@@ -47,7 +47,7 @@ class Login extends Component {
       return;
     }
     Taro.request({
-      url: 'http://localhost:3000/login/?',
+      url: 'https://chayuanshiyi.cn:4000/login/?',
       method:'POST',
       data: params
     }).then(res => {

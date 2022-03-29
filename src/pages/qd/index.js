@@ -48,7 +48,7 @@ class Qd extends Component {
     getLocationInfo().then(res => {
       const { longitude, latitude } = res;
       Taro.request({
-        url: 'http://localhost:3000/order/qd/receiveOrder/?',
+        url: 'https://chayuanshiyi.cn:4000/order/qd/receiveOrder/?',
         method: 'GET',
         data: { id: this.state.id, receiptUserId, receiptUserName, receiptRealName, receiptPhoneNumber, receiptCoordinate: { longitude, latitude } }
       }).then(res => {

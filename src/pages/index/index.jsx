@@ -41,7 +41,7 @@ class Index extends Component {
   getQdOrderList = () => {
     const userId = Taro.getStorageSync('userInfo').userId;
     Taro.request({
-      url: 'http://localhost:3000/order/qd/get/?',
+      url: 'https://chayuanshiyi.cn:4000/order/qd/get/?',
       method: 'GET',
       data: { userId }
     }).then(res => {

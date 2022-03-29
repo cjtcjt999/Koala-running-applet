@@ -12,7 +12,7 @@ class Address extends Component {
   componentDidShow() {
     const userInfo = Taro.getStorageSync('userInfo');
     Taro.request({
-      url: 'http://localhost:3000/address/get/?',
+      url: 'https://chayuanshiyi.cn:4000/address/get/?',
       method: 'GET',
       data: { userId: userInfo.userId }
     }).then(res => {

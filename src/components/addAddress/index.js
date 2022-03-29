@@ -136,7 +136,7 @@ class AddAddress extends Component {
       return;
     }
     Taro.request({
-      url: this.props.update ? 'http://localhost:3000/address/update/?' : 'http://localhost:3000/address/save/?',
+      url: this.props.update ? 'https://chayuanshiyi.cn:4000/address/update/?' : 'https://chayuanshiyi.cn:4000/address/save/?',
       method: 'GET',
       data: params
     }).then(res => {

@@ -54,7 +54,7 @@ class AddressInfo extends Component {
   getMyAddress = () => { //获取常用地址信息
     const userId = Taro.getStorageSync('userInfo').userId;
     Taro.request({
-      url: 'http://localhost:3000/address/get/?',
+      url: 'https://chayuanshiyi.cn:4000/address/get/?',
       method: 'GET',
       data: { userId }
     }).then(res => {

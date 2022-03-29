@@ -22,7 +22,7 @@ class Order extends Component {
   getOrder = () => {
     const userId = Taro.getStorageSync('userInfo').userId;
     Taro.request({
-      url: 'http://localhost:3000/order/dn/get/?',
+      url: 'https://chayuanshiyi.cn:4000/order/dn/get/?',
       method: 'GET',
       data: { userId }
     }).then(res => {
@@ -48,7 +48,7 @@ class Order extends Component {
   getQdOrder = () => {
     const userId = Taro.getStorageSync('userInfo').userId;
     Taro.request({
-      url: 'http://localhost:3000/order/qd/qdList/get/?',
+      url: 'https://chayuanshiyi.cn:4000/order/qd/qdList/get/?',
       method: 'GET',
       data: { userId }
     }).then(res => {

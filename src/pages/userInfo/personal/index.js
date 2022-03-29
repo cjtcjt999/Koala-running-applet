@@ -19,7 +19,7 @@ class Personal extends Component {
   }
   getUserInfo = () => {
     Taro.request({
-      url: 'http://localhost:3000/userInfo/get/?',
+      url: 'https://chayuanshiyi.cn:4000/userInfo/get/?',
       method: 'GET',
       data: { userId: this.state.userInfo.userId }
     }).then(res => {
@@ -54,7 +54,7 @@ class Personal extends Component {
       loading: true
     })
     Taro.request({
-      url: 'http://localhost:3000/userInfo/update/?',
+      url: 'https://chayuanshiyi.cn:4000/userInfo/update/?',
       method: 'GET',
       data: params
     }).then(res => {

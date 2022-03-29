@@ -47,7 +47,7 @@ class UserInfo extends Component {
   //     success: function (res) {
   //       console.log('褚锦涛1', res.tempFilePaths[0])
   //       Taro.uploadFile({
-  //         url: 'http://localhost:3000/userInfo/upload/?',
+  //         url: 'https://chayuanshiyi.cn:4000/userInfo/upload/?',
   //         filePath: res.tempFilePaths[0],
   //         name: 'file',
   //         header: {

@@ -189,7 +189,7 @@ class Dn extends Component {
       loading: true
     })
     Taro.request({
-      url: 'http://localhost:3000/order/dn/save/?',
+      url: 'https://chayuanshiyi.cn:4000/order/dn/save/?',
       method: 'GET',
       data: params
     }).then(res => {

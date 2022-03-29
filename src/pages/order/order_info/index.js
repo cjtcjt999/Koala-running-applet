@@ -61,7 +61,7 @@ class OrderInfo extends Component {
     getLocationInfo().then(res => {
       const { longitude, latitude } = res;
       Taro.request({
-          url: 'http://localhost:3000/order/qd/setCurrCoordinate/?',
+          url: 'https://chayuanshiyi.cn:4000/order/qd/setCurrCoordinate/?',
           method: 'GET',
           data: { id, receiptCoordinate: { longitude, latitude } }
       }).then(res => {
@@ -92,7 +92,7 @@ class OrderInfo extends Component {
 
   getRunnerCoordinate = (params,id) => {
     Taro.request({
-      url: 'http://localhost:3000/order/qd/getCurrCoordinate/?',
+      url: 'https://chayuanshiyi.cn:4000/order/qd/getCurrCoordinate/?',
       method: 'GET',
       data: { id }
     }).then(res => {
@@ -153,7 +153,7 @@ class OrderInfo extends Component {
     })
     const { userId: receiptUserId, userName: receiptUserName, realName: receiptRealName, phoneNumber: receiptPhoneNumber } = Taro.getStorageSync('userInfo');
     Taro.request({
-      url: 'http://localhost:3000/order/qd/receiveOrder/?',
+      url: 'https://chayuanshiyi.cn:4000/order/qd/receiveOrder/?',
       method: 'GET',
       data: { id: this.state.id, receiptUserId, receiptUserName, receiptRealName, receiptPhoneNumber }
     }).then(res => {
@@ -212,7 +212,7 @@ class OrderInfo extends Component {
       modalShow2: false
     })
     Taro.request({
-      url: 'http://localhost:3000/order/qd/completeOrder/?',
+      url: 'https://chayuanshiyi.cn:4000/order/qd/completeOrder/?',
       method: 'GET',
       data: { id: this.state.orderInfo.id, voucher: this.state.voucher }
     }).then(res => {
